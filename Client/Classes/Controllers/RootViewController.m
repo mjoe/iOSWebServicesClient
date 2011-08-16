@@ -176,6 +176,7 @@
 {
     [super viewDidLoad];
     self.tableView.tableHeaderView = self.headerView;
+
     NSInteger limit = [NSUserDefaults standardUserDefaults].sliderValue;
     self.slider.value = log2f(limit);
     self.sliderLabel.text = [NSString stringWithFormat:@"%d", limit];

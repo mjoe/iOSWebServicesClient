@@ -207,7 +207,8 @@
     @"<li>Device: <strong>%@</strong></li>"
     @"<li>Connection: <strong>%@</strong></li>"
     @"</ul>";
-    NSString *body = [NSString stringWithFormat:template, baseURL, device, connectionString];
+    // string types!
+    NSString *body = [NSString stringWithFormat:@"%@%@%@%@", template, baseURL, device, connectionString];
     [composer setMessageBody:body
                       isHTML:YES];
     
@@ -216,8 +217,20 @@
                        mimeType:@"text/csv" 
                        fileName:self.filename];
     
-    [self.navigationController presentModalViewController:composer 
-                                                 animated:YES];
+    // check if i am able to create a mail message
+    if ([MFMailComposeViewController canSendMail])
+        [self.navigationController presentModalViewController:composer 
+                                                     animated:YES];
+    else
+    {
+        UIAlertView *myAlert = [[UIAlertView alloc]
+                                initWithTitle:@"Error" message:@"Unable to create a mail message!"
+                                delegate:self 
+                                cancelButtonTitle:nil
+                                otherButtonTitles:@"OK", nil];
+        [myAlert show];
+        [myAlert release];
+    }
     [composer release];
 }
 
