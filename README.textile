@@ -1,8 +1,8 @@
-h1. iPhone Web Services Consumption Comparison
+h1. iOS Web Services Consumption Comparison
 
 h2. Introduction
 
-This project showcases different transport formats and libraries to consume web services from an iPhone application. It features a server application, a command-line script that saves the output of the server application in different formats, and an iPhone client application (compatible with iPhone OS 3.0 and higher).
+This project showcases different transport formats and libraries to consume web services from an iOS application. It features a server application, a command-line script that saves the output of the server application in different formats, and an iOS client application (compatible with iOS 3.0 and higher).
 
 The server application (written in PHP) reads a MySQL database (Server/data/schema.sql) and outputs data in the following formats:
 
@@ -40,7 +40,7 @@ For the server:
 * "spyc":http://code.google.com/p/spyc/ - A simple YAML loader/dumper class for PHP.
 * "pb4php":http://code.google.com/p/pb4php/ - Protocol Buffer for PHP
 
-For the iPhone client:
+For the iOS client:
 
 * "ASIHTTPRequest":http://allseeing-i.com/ASIHTTPRequest - wrapper around the CFNetwork API.
 * "json-framework":http://code.google.com/p/json-framework/ - A strict JSON parser/generator for Objective-C.
