@@ -521,10 +521,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				3AA35BB9113CEEB300A89E31 /* Externals */,
 				3A50C57211204B4A0027974D /* Classes */,
 				3A50C57C11204B560027974D /* Resources */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				3AA35BB9113CEEB300A89E31 /* Externals */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);

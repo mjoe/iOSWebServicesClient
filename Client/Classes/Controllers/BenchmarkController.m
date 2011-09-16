@@ -32,6 +32,10 @@
 //  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 
+//
+//  Modified for iOSWebServicesClient by Joerg Mattiello
+//
+
 #import "BenchmarkController.h"
 #import "BaseDataLoader.h"
 #import "BaseDeserializer.h"
@@ -212,7 +216,7 @@
     [composer setMessageBody:body
                       isHTML:YES];
     
-    [composer setSubject:@"iPhoneWebServicesClient Benchmark Results"];
+    [composer setSubject:@"iOSWebServicesClient Benchmark Results"];
     [composer addAttachmentData:[NSData dataWithContentsOfFile:self.csvFilePath]
                        mimeType:@"text/csv" 
                        fileName:self.filename];
