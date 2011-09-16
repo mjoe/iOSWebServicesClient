@@ -72,11 +72,11 @@ To avoid these steps above, this project includes a version of libsyck.a already
 
 h3. SOAP in Cocoa
 
-The "wsdl2objc":http://code.google.com/p/wsdl2objc/ tool was used to generate Objective-C (Cocoa) code from the server's WSDL. This code was later adapted to parse the array returned by the server. There is also an online WSDL to Objective-C generator out there, see http://www.sudzc.com/.
+The "wsdl2objc":http://code.google.com/p/wsdl2objc/ tool was used to generate Objective-C (Cocoa) code from the server's WSDL. This code was later adapted to parse the array returned by the server. There is also an online WSDL to Objective-C generator out there, see "http://www.sudzc.com/":http://www.sudzc.com/.
 
 h2. Installation
 
-Take a look at the AMP-Stack for your OS (http://en.wikipedia.org/wiki/List_of_AMP_packages), maybe it helps.
+Take a look at the AMP-Stack for your OS ("http://en.wikipedia.org/wiki/List_of_AMP_packages":http://en.wikipedia.org/wiki/List_of_AMP_packages), maybe it helps.
 
 # Set up the server:
 ## Upload the "Server" folder contents via FTP or other means.
